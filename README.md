@@ -221,13 +221,6 @@ We welcome contributions! Please follow these steps:
 - 📱 **Mobile-First**: Consider mobile experience
 - ✅ **Testing**: Add tests for new features
 
-## 📚 Documentation
-
-- 📖 [Development Setup](./DEV_SETUP.md)
-- 📱 [Mobile App Guide](./MOBILE_APP_GUIDE.md)
-- 📊 [Import/Export Guide](./IMPORT_EXPORT_GUIDE.md)
-- 📋 [Project Summary](./PROJECT_SUMMARY.md)
-
 ## 🔐 Security
 
 - 🛡️ **Supabase Authentication**: Industry-standard security
