@@ -1,0 +1,20 @@
+FAVICON SETUP INSTRUCTIONS
+
+The custom favicon.svg has been created for Safarnama!
+
+If you want to add a traditional .ico file for maximum browser compatibility:
+
+1. Go to https://favicon.io/favicon-converter/
+2. Upload the favicon.svg file
+3. Download the generated favicon.ico
+4. Place it in the public/ folder
+
+The HTML is already configured to use both:
+- favicon.svg (modern browsers)
+- favicon.ico (fallback for older browsers)
+
+Current favicon features:
+- Purple gradient background (#6366f1)
+- White diamond compass symbol
+- Small travel indicators
+- Scalable SVG format

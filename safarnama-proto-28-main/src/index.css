@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Safarnama Design System - Vibrant, Travel-Inspired Theme */
+
+@layer base {
+  :root {
+    /* Luxury Travel Color Palette */
+    /* Background: Ivory White (#FAFAFA) */
+    --background: 0 0% 98%;
+    --foreground: 220 13% 7%;  /* Midnight Black (#121212) */
+
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 7%;
+
+    /* Interactive elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 7%;
+
+    /* Primary: Royal Blue (#1A73E8) → trust, professionalism */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 217 85% 70%;
+    --primary-dark: 217 100% 50%;
+
+    /* Secondary: Champagne Gold (#D4AF37) → luxury, exclusivity */
+    --secondary: 43 69% 52%;
+    --secondary-foreground: 220 13% 7%;
+
+    /* Accent: Sunset Orange (#FF7043) → excitement, highlights */
+    --accent: 14 100% 63%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success states - keeping green for positive actions */
+    --success: 155 65% 50%;
+    --success-foreground: 0 0% 100%;
+
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 85% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(43 69% 52%), hsl(43 75% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(14 100% 63%), hsl(14 95% 70%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(0 0% 98%));
+
+    /* Neutral system - refined for luxury feel */
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Alert colors */
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 45 85% 60%;
+    --warning-foreground: 220 13% 7%;
+
+    /* Borders and inputs - clean, minimal */
+    --border: 220 13% 91%;
+    --input: 220 13% 96%;
+    --ring: 217 91% 60%;
+
+    /* Premium shadows */
+    --shadow-card: 0 2px 20px -4px hsl(217 91% 60% / 0.1);
+    --shadow-button: 0 4px 12px -2px hsl(217 91% 60% / 0.3);
+    --shadow-floating: 0 8px 32px -8px hsl(217 91% 60% / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /* Spacing and sizing */
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme for luxury travel */
+    --background: 220 13% 7%;
+    --foreground: 0 0% 98%;
+
+    /* Card system - dark */
+    --card: 220 13% 10%;
+    --card-foreground: 0 0% 98%;
+
+    /* Interactive elements - dark */
+    --popover: 220 13% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Primary: Royal Blue - dark mode */
+    --primary: 217 85% 70%;
+    --primary-foreground: 220 13% 7%;
+    --primary-light: 217 80% 80%;
+    --primary-dark: 217 95% 60%;
+
+    /* Secondary: Champagne Gold - dark mode */
+    --secondary: 43 75% 65%;
+    --secondary-foreground: 220 13% 7%;
+
+    /* Accent: Sunset Orange - dark mode */
+    --accent: 14 95% 70%;
+    --accent-foreground: 220 13% 7%;
+
+    /* Success states - dark */
+    --success: 155 60% 60%;
+    --success-foreground: 220 13% 7%;
+
+    /* Premium gradients - dark */
+    --gradient-primary: linear-gradient(135deg, hsl(217 85% 70%), hsl(217 80% 80%));
+    --gradient-secondary: linear-gradient(135deg, hsl(43 75% 65%), hsl(43 80% 75%));
+    --gradient-accent: linear-gradient(135deg, hsl(14 95% 70%), hsl(14 90% 75%));
+    --gradient-card: linear-gradient(145deg, hsl(220 13% 10%), hsl(220 13% 12%));
+
+    /* Neutral system - dark */
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 65%;
+
+    /* Alert colors - dark */
+    --destructive: 0 70% 65%;
+    --destructive-foreground: 0 0% 98%;
+    --warning: 45 80% 65%;
+    --warning-foreground: 220 13% 7%;
+
+    /* Borders and inputs - dark */
+    --border: 220 13% 20%;
+    --input: 220 13% 15%;
+    --ring: 217 85% 70%;
+
+    /* Premium shadows - dark */
+    --shadow-card: 0 4px 24px -4px hsl(0 0% 0% / 0.5);
+    --shadow-button: 0 4px 16px -2px hsl(217 85% 70% / 0.4);
+    --shadow-floating: 0 12px 40px -8px hsl(0 0% 0% / 0.7);
+
+    /* Sidebar colors */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
